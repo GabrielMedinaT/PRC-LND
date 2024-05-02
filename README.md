@@ -1,6 +1,6 @@
 # Near-Earth Objects Explorer
 
-Near-Earth Objects Explorer es una aplicación web actualmente en desarrollo  con React con Vite que permite explorar información sobre objetos cercanos a la Tierra, satélites y otros datos relacionados obtenidos a través de la API de la NASA.
+Near-Earth Objects Explorer es una aplicación web actualmente en desarrollo con React con Vite que permite explorar información sobre objetos cercanos a la Tierra, satélites y otros datos relacionados obtenidos a través de la API de la NASA.
 
 La aplicación ofrece una interfaz intuitiva para buscar, visualizar y obtener detalles sobre estos objetos, brindando así una experiencia educativa y fascinante sobre el universo que nos rodea.
 
@@ -33,6 +33,8 @@ Para ejecutar la aplicación en tu entorno local, sigue estos pasos:
 1. Clona este repositorio: `git clone https://github.com/tu-usuario/Near-Earth-Objects-Explorer.git`
 2. Instala las dependencias: `npm install` o `yarn install`
 3. Inicia la aplicación: `npm start` o `yarn start`
+4. dirigete a https://api.nasa.gov/ para solicitar tu apikey
+5. sustituye import.meta.env.VITE_NASA_API_KEY que se encuentra en el archivo Mas.jsx por tu apikey siempre entre ""
 
 ## Uso
 
