@@ -1,0 +1,28 @@
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+.Left {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: start;
+  padding: 1rem 1rem;
+  background-color: #011647;
+  color: #fff;
+  position: fixed;
+  width: 25vw;
+  height: 75vh;
+  z-index: 2;
+}
+ul {
+  list-style: none;
+  font-size: 1rem;
+  margin: 0 auto;
+}
