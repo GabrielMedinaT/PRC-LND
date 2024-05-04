@@ -17,12 +17,12 @@
   background-color: #011647;
   color: #fff;
   position: fixed;
-  width: 25vw;
+  width: 15vw;
   height: 75vh;
   z-index: 2;
 }
 ul {
   list-style: none;
-  font-size: 1rem;
+  font-size: 1vw;
   margin: 0 auto;
 }

@@ -59,13 +59,7 @@ const Mas = () => {
         <h2 className="titluloPOD">{title}</h2>
         <div>
           {imageUrl && (
-            <img
-              className="fotoODAY"
-              src={imageUrl}
-              alt="NASA APOD"
-              width={800}
-              height={600}
-            />
+            <img className="fotoODAY" src={imageUrl} alt="NASA APOD" />
           )}
         </div>
       </div>

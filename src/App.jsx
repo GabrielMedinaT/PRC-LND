@@ -1,5 +1,4 @@
 import "./App.css";
-import Earth from "./Components/Earth";
 import NavBar from "./Components/NavBar";
 import About from "./Components/About";
 import { useState } from "react";
@@ -9,6 +8,7 @@ import Mas from "./Components/Mas";
 import Footer from "./Components/Footer";
 import SolarSystem from "./Components/SolarSystem";
 import Registro from "./Components/Registro";
+import Hubble from "./Components/Hubble";
 function App() {
   const [render, setRender] = useState("home");
 
@@ -18,11 +18,12 @@ function App() {
       <NavBar render={render} setRender={setRender} />
       <div className="App">
         <Left render={render} setRender={setRender} />
-        {render === "Home" && <SolarSystem />}
+        <SolarSystem />
         {render === "About" && <About />}
         {render === "iss" && <ISS />}
         {render === "mas" && <Mas />}
         {render === "registro" && <Registro />}
+        {render === "hubble" && <Hubble />}
       </div>
       <Footer />
     </>

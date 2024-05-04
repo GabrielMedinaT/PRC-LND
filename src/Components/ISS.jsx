@@ -1,6 +1,6 @@
 import "./ISS.css";
 
-const Earth = () => {
+const ISS = () => {
   return (
     <div className="iss">
       <div className="fotoISS"></div>
@@ -35,4 +35,4 @@ const Earth = () => {
   );
 };
 
-export default Earth;
+export default ISS;

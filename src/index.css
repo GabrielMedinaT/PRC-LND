@@ -1,1 +1,16 @@
 
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    list-style: none;
+}
+@media screen and (max-width: 768px) {
+    .App {
+        height: 200vh;
+    }
+}

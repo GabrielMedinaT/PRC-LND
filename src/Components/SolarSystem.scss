@@ -135,7 +135,7 @@ code {
     top: 50%;
     left: 50%;
     position: absolute;
-    z-index: 1;
+
     &:not(.sun) {
       border: 1px solid rgba(102, 166, 229, 0.12);
       &:before {
@@ -148,6 +148,46 @@ code {
     &:not(.asteroids-belt) {
       &:before {
         box-shadow: inset 0 6px 0 -2px rgba(0, 0, 0, 0.25);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px){
+  .solar-syst {
+    &:after {
+      content: "";
+      position: absolute;
+      height: 2px;
+      width: 2px;
+      top: -2px;
+      background: white;
+      box-shadow: stars(500, 1800);
+      border-radius: 100px;
+    }
+    margin: 0 auto;
+    width: 80vw;
+    height: 105vh;
+    position: relative;
+    div {
+      border-radius: 1000px;
+      top: 50%;
+      left: 50%;
+      position: absolute;
+  
+      &:not(.sun) {
+        border: 1px solid rgba(102, 166, 229, 0.12);
+        &:before {
+          left: 50%;
+          border-radius: 100px;
+          content: "";
+          position: absolute;
+        }
+      }
+      &:not(.asteroids-belt) {
+        &:before {
+          box-shadow: inset 0 6px 0 -2px rgba(0, 0, 0, 0.25);
+        }
       }
     }
   }
