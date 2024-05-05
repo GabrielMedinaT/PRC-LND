@@ -7,9 +7,9 @@
   text-decoration: none;
   scroll-behavior: smooth;
 }
-.Hubble {
+.satelite {
   position: relative;
-  margin-top: -70vh;
+  margin-top: -80vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,15 +18,12 @@
   margin-left: 27vw;
   z-index: 2;
 }
-.fotoHubble {
+.fotoSatelite {
+  margin-top: 30vh;
   width: 60%;
   height: 100%;
-  background-image: url("https://www.ngenespanol.com/wp-content/uploads/2023/05/telescopio-espacial-hubble-que-es-y-como-funciona-este-observatorio-1280x720.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
 }
-.descHubble {
+.desc {
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -54,66 +54,10 @@ $asteroids-belt-pl: 210px;
   background: radial-gradient(ellipse at bottom, #1c2837 0%, #050608 100%);
   background-attachment: fixed;
   margin-top: 0vh;
+  height: 85vh;
 }
 
-h1 {
-  font-weight: 300;
-  font-size: 2.5em;
-  text-transform: uppercase;
-  font-family: Lato;
-  line-height: 1.6em;
-  letter-spacing: 0.1em;
-}
 
-a,
-a:visited {
-  text-decoration: none;
-  color: white;
-  opacity: 0.7;
-  &:hover {
-    opacity: 1;
-  }
-  &.icon {
-    margin-right: 2px;
-    padding: 3px;
-  }
-}
-
-.description {
-  padding: 30px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 25%;
-  z-index: 999;
-  p {
-    font-size: 0.9em;
-    & + p {
-      margin-top: 20px;
-    }
-    &.author {
-      font-size: 0.7em;
-      .fa-heart {
-        color: #860014;
-      }
-    }
-  }
-}
-
-hr {
-  margin: 26px 0;
-  border: 0;
-  border-top: 1px solid white;
-  background: transparent;
-  width: 25%;
-  opacity: 0.1;
-}
-
-code {
-  color: #ae94c0;
-  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
-  font-size: 0.9em;
-}
 
 .solar-syst {
   &:after {
@@ -153,7 +97,7 @@ code {
   }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
   .solar-syst {
     &:after {
       content: "";
@@ -174,7 +118,7 @@ code {
       top: 50%;
       left: 50%;
       position: absolute;
-  
+
       &:not(.sun) {
         border: 1px solid rgba(102, 166, 229, 0.12);
         &:before {

@@ -1,4 +1,3 @@
-import React from "react";
 import "./Left.css";
 
 const Left = ({ setRender }) => {
@@ -12,9 +11,9 @@ const Left = ({ setRender }) => {
 
         <li onClick={() => changeRender("iss")}>ISS</li>
         <li onClick={() => changeRender("hubble")}>Hubble</li>
-        <li>Starlink</li>
-        <li>GPS</li>
-        <li>Galileo</li>
+        <li onClick={() => changeRender("webb")}>James Webb</li>
+        <li onClick={() => changeRender("gps")}>GPS</li>
+        <li onClick={() => changeRender("galileo")} >Galileo</li>
         <li>GLONASS</li>
         <li>Beidou</li>
         <li onClick={() => changeRender("mas")}>Photo of the Day</li>

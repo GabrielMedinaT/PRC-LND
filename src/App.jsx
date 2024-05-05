@@ -9,6 +9,9 @@ import Footer from "./Components/Footer";
 import SolarSystem from "./Components/SolarSystem";
 import Registro from "./Components/Registro";
 import Hubble from "./Components/Hubble";
+import Webb from "./Components/Webb";
+import GPS from "./Components/GPS";
+import Galileo from "./Components/Galileo";
 function App() {
   const [render, setRender] = useState("home");
 
@@ -24,6 +27,9 @@ function App() {
         {render === "mas" && <Mas />}
         {render === "registro" && <Registro />}
         {render === "hubble" && <Hubble />}
+        {render === "webb" && <Webb />}
+        {render === "gps" && <GPS />}
+        {render === "galileo" && <Galileo />}
       </div>
       <Footer />
     </>

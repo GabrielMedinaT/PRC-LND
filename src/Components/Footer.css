@@ -8,6 +8,11 @@
   scroll-behavior: smooth;
 }
 
+a {
+  color: wheat;
+  text-decoration: none;
+}
+
 .footer {
   background-image: url("../sources/images/marte.png");
   color: wheat;
@@ -19,8 +24,18 @@
   padding: 50px 0;
   width: 100vw;
   height: 15vh;
-  margin-top: -5vh;
-  z-index: 2;
+  position: relative;
+  z-index: 1;
+}
+
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
 }
 a {
   color: wheat;
