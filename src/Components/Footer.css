@@ -14,10 +14,10 @@ a {
 }
 
 .footer {
-  background-image: url("../sources/images/marte.png");
-  color: wheat;
+  background-image: url("../sources/images/footer.png");
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: top;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,6 +25,7 @@ a {
   width: 100vw;
   height: 15vh;
   position: relative;
+  color: wheat;
   z-index: 1;
 }
 

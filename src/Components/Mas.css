@@ -8,17 +8,17 @@
   scroll-behavior: smooth;
 }
 .mas {
-  display: flex;
-  flex-direction: row;
-  justify-content: start;
-  align-items: start;
-  height: 80vh;
   background-image: url("../sources/images/fondoMas.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  z-index: 10;
-  margin-left: 25vw;
+  position: relative;
+  margin-top: -80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70vw;
+  height: 40vw;
+  margin-left: 27vw;
+  z-index: 2;
+  transition: transform 0.3s ease;
 }
 .titluloPOD {
   font-size: 1.5rem;

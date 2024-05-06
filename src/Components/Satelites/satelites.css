@@ -1,0 +1,45 @@
+.satelite {
+  position: relative;
+  margin-top: -80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70vw;
+  height: 40vw;
+  margin-left: 27vw;
+  z-index: 2;
+  transition: transform 0.3s ease;
+}
+.slide-image {
+  width: 100%;
+}
+
+.fotoSatelite {
+  margin-top: 1vh;
+  width: 40%;
+  height: 40%;
+  transition: transform 0.3s ease; /* Agregamos una transición para suavizar el efecto */
+}
+
+.desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 50%;
+  color: wheat;
+  padding: 20px;
+  transition: transform 0.9s ease;
+}
+
+.desc:hover {
+  transform: scale(1.1) translateX(-10vw);
+  background-image: url("../../sources/images/fondotexto.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  color: white;
+  cursor: zoom-in;
+  border-radius: 40px;
+  z-index: 20;
+}

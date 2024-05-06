@@ -21,7 +21,7 @@ const Mas = () => {
           "https://api.nasa.gov/planetary/apod",
           {
             params: {
-              api_key: import.meta.env.VITE_NASA_API_KEY,
+              api_key: process.env.VITE_NASA_API_KEY,
               date: selectedDate,
             },
           }
@@ -44,7 +44,7 @@ const Mas = () => {
   return (
     <div className="mas">
       <div className="fecha">
-        <label htmlFor="datePicker" defaultValue={Date.now}>
+        <label htmlFor="datePicker" defaultValue={Date.now()}>
           Selecciona una fecha:
         </label>
         <input
