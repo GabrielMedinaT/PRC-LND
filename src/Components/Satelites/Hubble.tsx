@@ -1,3 +1,4 @@
+import React from "react";
 import "./satelites.css";
 import { Fade } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
@@ -24,8 +25,11 @@ const Hubble = () => {
           <Fade>
             {fadeImages.map((fadeImage, index) => (
               <div key={index}>
-                <img style={{ width: "100%" }} src={fadeImage.url} />
-                {/* <h2>{fadeImage.caption}</h2> */}
+                <img
+                  className="slide-image"
+                  src={fadeImage.url}
+                  alt={fadeImage.caption}
+                />
               </div>
             ))}
           </Fade>
@@ -48,6 +52,7 @@ const Hubble = () => {
           <a
             href="http://wsn.spaceflight.esa.int/Hubble/index_portal.php"
             target="_blank"
+            rel="noopener"
           >
             aqui
           </a>

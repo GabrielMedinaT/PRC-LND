@@ -2,7 +2,6 @@ import React from "react";
 import "./SolarSystem.scss";
 
 const SolarSystem = () => {
-  const newLocal = "earth";
   return (
     <div className="SolarSystem">
       <div className="solar-syst">

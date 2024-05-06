@@ -14,14 +14,14 @@ function App() {
         <Components.Left setRender={setRender} />
         <Components.SolarSystem />
         {render === "About" && <Components.About />}
-        {render === "iss" && <Components.ISS />}
+        {render === "iss" && <Components.Iss />}
         {render === "mas" && <Components.Mas />}
         {render === "registro" && <Components.Registro />}
         {render === "hubble" && <Components.Hubble />}
         {render === "webb" && <Components.Webb />}
-        {render === "gps" && <Components.GPS />}
+        {render === "gps" && <Components.Gps />}
         {render === "galileo" && <Components.Galileo />}
-        {render === "glonass" && <Components.GLONASS />}
+        {render === "glonass" && <Components.Glonass />}
         {render === "beidou" && <Components.Beidou />}
         {render === "apophis" && <Components.Apophis />}
       </div>

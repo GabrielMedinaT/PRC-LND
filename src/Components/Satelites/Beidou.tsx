@@ -3,13 +3,10 @@ import "./satelites.css";
 import { Fade } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 
-interface Slide {
-  url: string;
-  caption: string;
-}
 
-const Beidou: React.FC = () => {
-  const fadeImages: Slide[] = [
+
+const Beidou = () => {
+  const fadeImages  = [
     {
       url: "https://i.blogs.es/de1a6e/beidou/1366_2000.jpg",
       caption: "First Slide",

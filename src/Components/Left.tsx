@@ -1,19 +1,20 @@
+import React from "react";
 import "./Left.css";
 import PropTypes from "prop-types";
 
-const Left = ({ setRender }) => {
-  Left.propTypes = {
-    setRender: PropTypes.func.isRequired,
-  };
+interface LeftProps {
+  setRender: (value: string) => void;
+}
 
-  const changeRender = (value) => {
+const Left: React.FC<LeftProps> = ({ setRender }) => {
+  const changeRender = (value: string) => {
     setRender(value);
   };
 
   return (
     <div className="Left">
+      <h2>Satélites</h2>
       <ul className="Satelites">
-        <h2>Satélites</h2>
         <li onClick={() => changeRender("iss")}>ISS</li>
         <li onClick={() => changeRender("hubble")}>Hubble</li>
         <li onClick={() => changeRender("webb")}>James Webb</li>
@@ -22,8 +23,8 @@ const Left = ({ setRender }) => {
         <li onClick={() => changeRender("beidou")}>Beidou</li>
         <li onClick={() => changeRender("mas")}>Photo of the Day</li>
       </ul>
+      <h2>Asteroides</h2>
       <ul className="Asteroides">
-        <h2>Asteroides</h2>
         <li onClick={() => changeRender("apophis")}>Apophis</li>
         <li onClick={() => changeRender("bennu")}>Bennu</li>
         <li onClick={() => changeRender("ryugu")}>Ryugu</li>
@@ -34,6 +35,10 @@ const Left = ({ setRender }) => {
       </ul>
     </div>
   );
+};
+
+Left.propTypes = {
+  setRender: PropTypes.func.isRequired,
 };
 
 export default Left;
